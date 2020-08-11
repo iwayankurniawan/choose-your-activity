@@ -2,7 +2,7 @@ import * as ActionTypes from './ActionTypes';
 
 export const fetchActivity = () => (dispatch) => {
   dispatch(activityLoading(true));
-  return fetch("http://www.boredapi.com/api/activity/").then(response => {
+  return fetch("https://www.boredapi.com/api/activity/").then(response => {
     if (response.ok) {
       return response;
     } else {
